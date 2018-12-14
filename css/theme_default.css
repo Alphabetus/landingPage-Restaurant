@@ -146,6 +146,19 @@ hr{
   max-height: var(--h-landing-full);
   width: 100vw;
 }
+#button-facebook{
+  position: absolute;
+  top: 8em;
+  left: 10em;
+  transform: scale(2);
+  background-color: var(--color-01);
+  /* fx */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+}
+#button-facebook:hover{
+  background-color: var(--color-02);
+}
 /* ABOUT ATTRIBUTES ############################################################################# */
 #about{
   min-height: var(--h-landing);
@@ -178,9 +191,11 @@ hr{
   padding-left: 1.2em;
   border-radius: 0.5em 0 0 0;
 }
-#footer > .row{
-
-
+/* BUTTON ATTRIBUTES ######################################################################## */
+.btn:focus{
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
 }
 /* BORDER ATTRIBUTES ######################################################################## */
 .border-01{
@@ -211,6 +226,8 @@ p{
   text-align: justify;
   padding: 2vh 5vw;
   font-size: 1.2em;
+  margin: 0;
+  padding-top: 0.5vh;
 }
 ul{
   font-family: var(--font-p);

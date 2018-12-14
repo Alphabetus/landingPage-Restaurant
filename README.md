@@ -1,4 +1,4 @@
-# LandingPage - Food store
+# Landing Page for Food store
 ## Responsive frontend using bootstrap
 
 ### Live demo

@@ -1,3 +1,21 @@
+/* KEYFRAME ATTRIBUTES ######################################################################## */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 /* VAR ATTRIBUTES ######################################################################## */
 :root{
   /* COLOR VARS  */
@@ -19,11 +37,13 @@
   --color-transp-07: rgba(55, 81, 95, 0.35);
   --color-transp-08: rgba(99, 176, 205, 0.35);
   /* SHADOW VARS */
+  --shadow-01: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
   /* IMG VARS */
   --img-landing-01: url("../img/landingIMG-01.png");
   /* FONT VARS  */
   --font-p: 'Source Sans Pro', sans-serif;
   --font-h: 'Montserrat', sans-serif;
+  --font-special-01: 'Sacramento', cursive;
   /* SIZE VARS */
   --h-landing: 80vh;
   --h-landing-full: 90vh;
@@ -50,6 +70,18 @@ body{
   margin: 0;
   font-family: var(--font-p);
 }
+/* COMMON ATTRIBUTES ######################################################################## */
+hr{
+  height: 12px;
+  border: 0;
+  box-shadow: var(--shadow-01);
+  width: 100%!important;
+}
+.container{
+  padding: 0;
+  margin: auto;
+  width: 80%!important;
+}
 .container-fluid{
   padding: 0;
   margin: 0;
@@ -57,9 +89,12 @@ body{
 .landing{
   padding-top: var(--h-menu);
 }
+.header{
+  margin-top: 5vh;
+}
 /* MENU ATTRIBUTES ############################################################################## */
 #menu{
-  height: var(--h-menu);
+  min-height: var(--h-menu);
   min-width: 100%;
   /* styling  */
   background-color: var(--color-01);
@@ -105,19 +140,54 @@ body{
   color: var(--color-01);
 }
 /* HOME ATTRIBUTES ############################################################################## */
-#home{
-
-}
 #home img{
   max-height: var(--h-landing-full);
   width: 100vw;
 }
+/* ABOUT ATTRIBUTES ############################################################################# */
+#about{
+  min-height: var(--h-landing);
+}
+#about .slogan{
+  padding: 3vh 5vw;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: 300;
+  font-family: var(--font-special-01);
+  color: var(--color-07);
+}
+#description{
+  min-height: 50vh;
+}
+/* BORDER ATTRIBUTES ######################################################################## */
+.border-01{
+  border-style: dotted;
+  border-width: 0.04em;
+  border-color: var(--color-02);
+  border-radius: 0.3em 0 0.3em 0;
+}
+/* FX ATTRIBUTES ################################################################################ */
+.fx-shake-01:hover{
+  animation: shake 1150ms cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
 /* TYPOGRAPHY ATTRIBUTES ######################################################################## */
+h1{
+  font-size: 1.8em;
+}
 h1, h2, h3, h4, h5{
   font-family: var(--font-h);
+  font-weight: 900;
+  padding-bottom: 4vh;
+  padding: 2vh 5vw;
 }
 p{
   font-family: var(--font-p);
+  text-align: justify;
+  padding: 2vh 5vw;
+  font-size: 1.2em;
 }
 ul{
   font-family: var(--font-p);

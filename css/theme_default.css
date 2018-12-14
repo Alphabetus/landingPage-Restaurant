@@ -53,6 +53,37 @@
   --fx-ease-450: all 450ms ease-in-out;
   --fx-ease-1000: all 1000ms ease-in-out;
 }
+/* TYPOGRAPHY ATTRIBUTES ######################################################################## */
+h1{
+  font-size: 1.8em;
+}
+h1, h2, h3, h4, h5{
+  font-family: var(--font-h);
+  font-weight: 900;
+  padding-bottom: 4vh;
+  padding: 2vh 5vw;
+}
+p{
+  font-family: var(--font-p);
+  text-align: justify;
+  padding: 2vh 5vw;
+  font-size: 1.2em;
+  margin: 0;
+  padding-top: 0.5vh;
+}
+ul{
+  font-family: var(--font-p);
+}
+a{
+  color: var(--color-02);
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+}
+a:hover{
+  color: var(--color-01);
+  text-decoration: none;
+}
 /* BODY ATTRIBUTES ######################################################################## */
 * {
   box-sizing: border-box;
@@ -210,36 +241,5 @@ hr{
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
-/* TYPOGRAPHY ATTRIBUTES ######################################################################## */
-h1{
-  font-size: 1.8em;
-}
-h1, h2, h3, h4, h5{
-  font-family: var(--font-h);
-  font-weight: 900;
-  padding-bottom: 4vh;
-  padding: 2vh 5vw;
-}
-p{
-  font-family: var(--font-p);
-  text-align: justify;
-  padding: 2vh 5vw;
-  font-size: 1.2em;
-  margin: 0;
-  padding-top: 0.5vh;
-}
-ul{
-  font-family: var(--font-p);
-}
-a{
-  color: var(--color-02);
-  /* fx  */
-  transition: var(--fx-ease-450);
-  -webkit-transition: var(--fx-ease-450);
-}
-a:hover{
-  color: var(--color-01);
-  text-decoration: none;
 }
 /* ############################################################################################## */

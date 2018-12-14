@@ -48,6 +48,7 @@
   --h-landing: 80vh;
   --h-landing-full: 90vh;
   --h-menu: 10vh;
+  --h-anchor: 8vh;
   /* EFFECTS VARS  */
   --fx-ease-450: all 450ms ease-in-out;
   --fx-ease-1000: all 1000ms ease-in-out;
@@ -69,6 +70,7 @@ body{
   overflow-x: hidden;
   margin: 0;
   font-family: var(--font-p);
+  background-color: var(--color-transp-04);
 }
 /* COMMON ATTRIBUTES ######################################################################## */
 hr{
@@ -87,7 +89,7 @@ hr{
   margin: 0;
 }
 .landing{
-  padding-top: var(--h-menu);
+  padding-top: var(--h-anchor);
 }
 .header{
   margin-top: 5vh;
@@ -159,6 +161,27 @@ hr{
 #description{
   min-height: 50vh;
 }
+/* FOOTER ATTRIBUTES ######################################################################## */
+#footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  font-size: 0.6em;
+  padding-right: 1vw;
+  color: var(--color-01);
+  width: auto;
+  margin-left: auto;
+  background-color: var(--color-04);
+  text-align: right;
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  border-radius: 0.5em 0 0 0;
+}
+#footer > .row{
+
+
+}
 /* BORDER ATTRIBUTES ######################################################################## */
 .border-01{
   border-style: dotted;
@@ -191,5 +214,15 @@ p{
 }
 ul{
   font-family: var(--font-p);
+}
+a{
+  color: var(--color-02);
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+}
+a:hover{
+  color: var(--color-01);
+  text-decoration: none;
 }
 /* ############################################################################################## */

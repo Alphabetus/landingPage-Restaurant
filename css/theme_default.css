@@ -20,29 +20,47 @@
   --color-transp-08: rgba(99, 176, 205, 0.35);
   /* SHADOW VARS */
   /* IMG VARS */
+  --img-landing-01: url("../img/landingIMG-01.png");
   /* FONT VARS  */
   --font-p: 'Source Sans Pro', sans-serif;
   --font-h: 'Montserrat', sans-serif;
+  /* SIZE VARS */
+  --h-landing: 80vh;
+  --h-landing-full: 90vh;
+  --h-menu: 10vh;
+  /* EFFECTS VARS  */
+  --fx-ease-450: all 450ms ease-in-out;
+  --fx-ease-1000: all 1000ms ease-in-out;
 }
 /* BODY ATTRIBUTES ######################################################################## */
+* {
+  box-sizing: border-box;
+}
 html{
-  padding: 0;
-  margin: 0;
-  height: 100%;
+  padding: 0!important;
+  margin: 0!important;
 }
 body{
   position: relative;
   padding-bottom: 50px;
   height: 100%;
-  width: 100vw!important;
+  width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 0!important;
+  margin: 0;
   font-family: var(--font-p);
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+.landing{
+  padding-top: var(--h-menu);
 }
 /* MENU ATTRIBUTES ############################################################################## */
 #menu{
-  min-width: 100vw!important;
+  height: var(--h-menu);
+  min-width: 100%;
   /* styling  */
   background-color: var(--color-01);
 }
@@ -52,18 +70,46 @@ body{
   letter-spacing: 0.22em;
   font-size: 1.5em;
 }
-/* link and hover  */
+/* link and hover and active */
 #menu a{
   color: var(--color-04);
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
 }
-#menu a:hover{
+#menu a:hover, #menu .active{
   color: var(--color-06);
 }
 #mobileIcon{
   color: var(--color-04);
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
 }
 #mobileIcon:hover{
   color: var(--color-06);
+}
+/* LOCAL NAVIGATION ATTRIBUTES ################################################################## */
+.goDown{
+  color: var(--color-02);
+  font-size: 1.5em;
+  letter-spacing: 0.6em;
+  /* fx  */
+  transition: var(--fx-ease-1000);
+  -webkit-transition: var(--fx-ease-1000);
+}
+.goDown:hover{
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+  color: var(--color-01);
+}
+/* HOME ATTRIBUTES ############################################################################## */
+#home{
+
+}
+#home img{
+  max-height: var(--h-landing-full);
+  width: 100vw;
 }
 /* TYPOGRAPHY ATTRIBUTES ######################################################################## */
 h1, h2, h3, h4, h5{

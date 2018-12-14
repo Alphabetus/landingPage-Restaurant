@@ -35,7 +35,6 @@
   <body data-spy="scroll" data-target="#menu" id="mainBody">
     <!-- navigation > main -->
     <nav id ="menu" class="smoothClass menu navbar navbar-expand-lg fixed-top align-midle" role="navigation">
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i id="mobileIcon" class="fas fa-ellipsis-h"></i>
       </button>
@@ -45,7 +44,7 @@
       <section class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#mainBody">Home</a>
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">Quem somos</a>
@@ -65,8 +64,27 @@
         </ul>
       </section>
     </nav>
-
     <!-- /navigation > main -->
+    <!-- body > home -->
+    <section id="home" class="container-fluid landing">
+      <!-- landing image -->
+      <section>
+        <img src="img/landingIMG-01.png"/>
+      </section>
+      <!-- /landing image -->
+      <!-- local navigation -->
+      <nav class="smoothClass row justify-content-center forceTop">
+        <a class="nav-link" href="#services">
+          <section class="goDown">
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-down"></i>
+          </section>
+        </a>
+      </nav>
+      <!-- /local navigation -->
+    </section>
+    <!-- /body > home -->
     <!-- post load script call -->
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="js/popper.min.js" type="text/javascript"></script>

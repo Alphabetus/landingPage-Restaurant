@@ -1,0 +1,78 @@
+/* VAR ATTRIBUTES ######################################################################## */
+:root{
+  /* COLOR VARS  */
+  --color-01: #2B061E;
+  --color-02: #875053;
+  --color-03: #878787;
+  --color-04: #FFEED6;
+  --color-05: #A08794;
+  --color-06: #a9d6aa;
+  --color-07: #37515F;
+  --color-08: #63B0CD;
+  /* NON OPAQUE COLOR VARS  */
+  --color-transp-01: rgba(43, 6, 30, 0.35);
+  --color-transp-02: rgba(135, 80, 83, 0.35);
+  --color-transp-03: rgba(135, 135, 135, 0.35);
+  --color-transp-04: rgba(255, 238, 214, 0.35);
+  --color-transp-05: rgba(160, 135, 148, 0.35);
+  --color-transp-06: rgba(158, 188, 159, 0.35);
+  --color-transp-07: rgba(55, 81, 95, 0.35);
+  --color-transp-08: rgba(99, 176, 205, 0.35);
+  /* SHADOW VARS */
+  /* IMG VARS */
+  /* FONT VARS  */
+  --font-p: 'Source Sans Pro', sans-serif;
+  --font-h: 'Montserrat', sans-serif;
+}
+/* BODY ATTRIBUTES ######################################################################## */
+html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body{
+  position: relative;
+  padding-bottom: 50px;
+  height: 100%;
+  width: 100vw!important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0!important;
+  font-family: var(--font-p);
+}
+/* MENU ATTRIBUTES ############################################################################## */
+#menu{
+  min-width: 100vw!important;
+  /* styling  */
+  background-color: var(--color-01);
+}
+#menu .navbar-header{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+}
+/* link and hover  */
+#menu a{
+  color: var(--color-04);
+}
+#menu a:hover{
+  color: var(--color-06);
+}
+#mobileIcon{
+  color: var(--color-04);
+}
+#mobileIcon:hover{
+  color: var(--color-06);
+}
+/* TYPOGRAPHY ATTRIBUTES ######################################################################## */
+h1, h2, h3, h4, h5{
+  font-family: var(--font-h);
+}
+p{
+  font-family: var(--font-p);
+}
+ul{
+  font-family: var(--font-p);
+}
+/* ############################################################################################## */

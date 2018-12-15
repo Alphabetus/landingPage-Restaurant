@@ -6,5 +6,9 @@
 
 ### Changelog
 
+#### v0.2
+- Added tabs with menu & services;
+- Several css adjustments;
+
 #### v0.1
 - Initial commit;

@@ -27,17 +27,23 @@
   --color-06: #a9d6aa;
   --color-07: #37515F;
   --color-08: #63B0CD;
+  --color-09: #ffd7a3;
+  --color-10: #6d5a41;
   /* NON OPAQUE COLOR VARS  */
   --color-transp-01: rgba(43, 6, 30, 0.35);
+  --color-transp-01-dark: rgba(43, 6, 30, 0.85);
   --color-transp-02: rgba(135, 80, 83, 0.35);
   --color-transp-03: rgba(135, 135, 135, 0.35);
   --color-transp-04: rgba(255, 238, 214, 0.35);
+  --color-transp-04-dark: rgba(255, 238, 214, 0.55);
   --color-transp-05: rgba(160, 135, 148, 0.35);
   --color-transp-06: rgba(158, 188, 159, 0.35);
   --color-transp-07: rgba(55, 81, 95, 0.35);
   --color-transp-08: rgba(99, 176, 205, 0.35);
   /* SHADOW VARS */
   --shadow-01: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  --shadow-02: -0.06em -0.12em rgba(0,0,0,0.45);
+  --shadow-03: 0.09em 0 rgba(0,0,0,0.15);
   /* IMG VARS */
   --img-landing-01: url("../img/landingIMG-01.png");
   /* FONT VARS  */
@@ -46,15 +52,19 @@
   --font-special-01: 'Sacramento', cursive;
   /* SIZE VARS */
   --h-landing: 80vh;
-  --h-landing-full: 90vh;
+  --h-landing-full: 92vh;
   --h-menu: 10vh;
   --h-anchor: 8vh;
+  --h-anchor-big: 12vh;
   /* EFFECTS VARS  */
   --fx-ease-450: all 450ms ease-in-out;
   --fx-ease-1000: all 1000ms ease-in-out;
 }
 /* TYPOGRAPHY ATTRIBUTES ######################################################################## */
 h1{
+  margin-left: 0.6em;
+  margin-bottom: 3vh;
+  text-align: left!important;
   font-size: 1.8em;
 }
 h1, h2, h3, h4, h5{
@@ -62,6 +72,7 @@ h1, h2, h3, h4, h5{
   font-weight: 900;
   padding-bottom: 4vh;
   padding: 2vh 5vw;
+  color: var(--color-01);
 }
 p{
   font-family: var(--font-p);
@@ -70,6 +81,7 @@ p{
   font-size: 1.2em;
   margin: 0;
   padding-top: 0.5vh;
+  color: var(--color-01);
 }
 ul{
   font-family: var(--font-p);
@@ -123,6 +135,9 @@ hr{
 .landing{
   padding-top: var(--h-anchor);
 }
+.landingBig{
+  padding-top: var(--h-anchor-big);
+}
 .header{
   margin-top: 5vh;
 }
@@ -173,10 +188,63 @@ hr{
   letter-spacing: 0.03em;
   color: var(--color-01);
 }
+.goDown-02{
+  color: var(--color-01);
+  font-weight: 900;
+  font-size: 1.5em;
+  text-align: center;
+  /* fx  */
+  transition: var(--fx-ease-1000);
+  -webkit-transition: var(--fx-ease-1000);
+}
+.goDown-02:hover{
+
+}
 /* HOME ATTRIBUTES ############################################################################## */
 #home img{
-  max-height: var(--h-landing-full);
+  height: var(--h-landing-full);
   width: 100vw;
+}
+#home h5{
+  padding: 0;
+  margin: 0;
+}
+#home > nav{
+  position: absolute;
+  top: 82vh;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: none none solid none;
+  border-width: 0.12em;
+  border-radius: 0.2em;
+  border-color: var(--color-01);
+  padding: 0!important;
+  /* fx */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+  background-color: var(--color-transp-04-dark);
+}
+#home > nav:hover{
+  border-style: solid;
+  background-color: var(--color-04);
+  border-radius: 4em;
+  box-shadow: var(--shadow-02);
+}
+#smallWelcome{
+  position: absolute;
+  top: 10vh;
+  height: 50vh;
+  width: 100vw;
+  background-color: var(--color-transp-04);
+  font-size: 3em;
+  font-family: var(--font-special-01);
+}
+#smallWelcome > span{
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  width: 100%;
 }
 #button-facebook{
   position: absolute;
@@ -204,7 +272,94 @@ hr{
   color: var(--color-07);
 }
 #description{
-  min-height: 50vh;
+  min-height: 40vh;
+}
+/* SERVICES ATTRIBUTES ############################################################################# */
+#services h2{
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+#services ul{
+  border:0;
+}
+#services .nav-item{
+  background-color: var(--color-transp-04-dark);
+}
+#services .nav-link {
+  border-width: 0.08em;
+  border-color: var(--color-09);
+}
+#services .active{
+  background-color: var(--color-09);
+}
+#services .tab-content{
+  background-color: var(--color-09);
+  padding: 3vh 4vw;
+  border-radius: 0 0 1.2em 0;
+}
+#services a{
+  color: var(--color-01);
+  font-weight: 900;
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+}
+#services a:hover{
+  color: var(--color-02);
+  font-weight: 0;
+}
+#services nav{
+  margin-top: 3vh;
+}
+#services .slogan{
+  padding: 3vh 5vw;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 300;
+  font-family: var(--font-special-01);
+  color: var(--color-transp-01-dark);
+}
+#services .ementa-item{
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+#services .card{
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 0;
+  border: 0.065em solid var(--color-transp-01);
+  border-radius: 0 0 0.55em 0;
+  margin: 1vh 1vw;
+  min-height: 45vh;
+}
+#services .card-img{
+  padding: 0;
+  margin-top: 2vh;
+  height: 9.5em;
+  width: 9.5em;
+  border-style: solid;
+  border-width: 0.15em;
+  border-color: var(--color-10);
+  background-color: var(--color-10);
+  /* fx  */
+  transition: var(--fx-ease-450);
+  -webkit-transition: var(--fx-ease-450);
+}
+#services .card-img:hover{
+  border-radius: 1em!important;
+}
+#services .card-title{
+  margin: 0;
+  padding: 0;
+  text-align: center!important;
+  font-size: 0.85em;
+  font-family: var(--font-h);
+  font-weight: 900;
+  /* background-color: red; */
+}
+#services .card-text{
+  font-family: var(--font-p);
 }
 /* FOOTER ATTRIBUTES ######################################################################## */
 #footer{

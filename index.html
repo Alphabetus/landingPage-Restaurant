@@ -70,9 +70,30 @@
     <!-- body > home -->
     <section id="home" class="container-fluid landing">
       <!-- landing image -->
-      <section>
+      <section class="d-none d-sm-block"><!-- BIGGER THAN SM BLOCK -->
         <img src="img/landingIMG-01.png"/>
       </section>
+      <section class="d-block d-sm-none"><!-- SM BLOCK -->
+        <img src="img/landingIMG-01-mobile.png"/>
+        <div class="row justify-content-around">
+          <div id="smallWelcome" class="col-sm text-center align-self-center">
+            <span>
+              Bem vindo
+              <br>
+              Bom Apetite
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- local navigation -->
+        <nav class="smoothClass row">
+          <a class="nav-link" href="#about">
+            <section class="goDown-02">
+              <h5>entrar</h5>
+            </section>
+          </a>
+        </nav>
+      <!-- /local navigation -->
       <section class="d-none d-md-blockd-none d-md-block">
         <a id="button-facebook" href="https://www.facebook.com/Ppsobremesas-237747296914576/" target="_blank" class="btn btn-social btn-facebook">
           <i class="fab fa-facebook"></i>
@@ -81,17 +102,6 @@
       </section>
       <hr>
       <!-- /landing image -->
-      <!-- local navigation -->
-        <nav class="smoothClass row d-none d-md-blockd-none d-md-block">
-          <a class="nav-link" href="#about">
-            <section class="goDown">
-              <i class="fas fa-caret-down"></i>
-              <i class="fas fa-caret-down"></i>
-              <i class="fas fa-caret-down"></i>
-            </section>
-          </a>
-        </nav>
-      <!-- /local navigation -->
     </section>
     <!-- /body > home -->
     <!-- body > about -->
@@ -106,10 +116,12 @@
       </section>
       <!-- /row 1 -->
       <!-- row 2 -->
+      <h1><i class="fas fa-bookmark"></i> Quem Somos</h1>
       <section id="description" class="row justify-content-around">
+
         <!-- col 1 -->
         <section class="col-sm-10 align-self-top">
-          <h1>Quem Somos</h1>
+
           <p>
             Pataniscas & Panados nasceu para ajudá-lo a fazer crescer o seu negócio ou para que possa usar o seu tempo sem se preocupar com a cozinha. Experimente os nossos servi&ccedil;os e disfrute da melhor qualidade com o verdadeiro sabor da comida caseira!
           </p>
@@ -125,7 +137,7 @@
       <!-- /row 2 -->
       <!-- local navigation -->
         <nav class="smoothClass row d-none d-md-blockd-none d-md-block">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#services">
             <section class="goDown">
               <i class="fas fa-caret-down"></i>
               <i class="fas fa-caret-down"></i>
@@ -136,6 +148,346 @@
       <!-- /local navigation -->
     </section>
     <!-- /body > about -->
+    <!-- body > services -->
+    <section id="services" class="container-fluid landingBig">
+      <h1><i class="fas fa-bookmark"></i> Os Nossos Servi&ccedil;os</h1>
+      <!-- tabs -->
+      <!-- tab > header -->
+      <!-- wrapper -->
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-9">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <!-- tab 1 > header -->
+              <a class="nav-item nav-link active col-xs-12 col-sm-3 col-md-2 col-lg-2" id="nav-geral" data-toggle="tab" href="#nav-geral-tab" role="tab" aria-controls="nav-geral-tab" aria-selected="true">Geral</a>
+              <!-- tab 2 > header -->
+              <a class="nav-item nav-link col-xs-12 col-sm-3 col-md-2 col-lg-2" id="nav-profissionais" data-toggle="tab" href="#nav-profissionais-tab" role="tab" aria-controls="nav-profssionais-tab" aria-selected="false">Profissionais</a>
+              <!-- tab 3 > header -->
+              <a class="nav-item nav-link col-xs-12 col-sm-3 col-md-2 col-lg-2" id="nav-particulares" data-toggle="tab" href="#nav-particulares-tab" role="tab" aria-controls="nav-particulare-tab" aria-selected="false">Particulares</a>
+              <!-- tab 4 > header -->
+              <a class="nav-item nav-link col-xs-12 col-sm-3 col-md-2 col-lg-2" id="nav-sobremesas" data-toggle="tab" href="#nav-sobremesas-tab" role="tab" aria-controls="nav-sobremesas-tab" aria-selected="false">Sobremesas</a>
+            </div>
+          </nav>
+          <!-- /tab > header -->
+          <!-- tab > content -->
+          <div class="tab-content" id="nav-tabContent">
+            <!-- tab 1 > content -->
+            <div class="tab-pane fade show active" id="nav-geral-tab" role="tabpanel" aria-labelledby="nav-home-tab">
+              <p>
+                Todos os nossos produtos s&atilde;o confeccionados em ambiente caseiro, com total sabor e qualidade, utilizando os ingredientes mais frescos para garantir a sua total satisfa&ccedil;&atilde;o.
+              </p>
+              <p>
+                Fa&ccedil;a a sua encomenda e disfrute de uma refei&ccedil;&atilde;o saborosa e quente &agrave; sua espera.
+                <br>
+                Consulte a nossa ementa e delicie-se.
+              </p>
+              <p class="slogan">
+                Cozinhamos com amor...
+              </p>
+            </div>
+            <!-- tab 2 > content -->
+            <div class="tab-pane fade" id="nav-profissionais-tab" role="tabpanel" aria-labelledby="nav-profissionais">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3><i class="fas fa-utensils"></i> Ementa para Profissionais</h3>
+                </div>
+                <div class="col-sm-12">
+                  <p>
+                    Fa&ccedil;a a sua encomenda antecipadamente. N&oacute;s entregamos no local e hora combinada.
+                  </p>
+                  <p>
+                    Aumente o menu do seu estabelecimento de forma simplificada, com o verdadeiro sabor da comida caseira e com margens de lucro interessantes.
+                  </p>
+                </div>
+              </div>
+              <!-- EMENTA >> GRID 4 > GRID 2 > GRID 1 -->
+              <div class="ementa row justify-content-center">
+                <!-- col 1 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/01.jpg" alt="Panados de porco ou peru">
+                    <div class="card-body">
+                      <h5 class="card-title">Panados de porco ou perú</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 1 -->
+                <!-- col 2 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/02.jpg" alt="Pataniscas de Bacalhau">
+                    <div class="card-body">
+                      <h5 class="card-title">Pataniscas de Bacalhau</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 2 -->
+                <!-- col 3 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Salada de Bacalhau - Punheta de Bacalhau -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/03.jpg" alt="Punheta de Bacalhau">
+                    <div class="card-body">
+                      <h5 class="card-title">Punheta de Bacalhau</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 3 -->
+                <!-- col 4 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Salada de grão com atum -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/04.jpg" alt="Salada de grão com atum">
+                    <div class="card-body">
+                      <h5 class="card-title">Salada de grão com atum</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 4 -->
+                <!-- col 5 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Iscas de Fígado -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/05.jpg" alt="Iscas de Fígado">
+                    <div class="card-body">
+                      <h5 class="card-title">Iscas de Fígado</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 5 -->
+                <!-- col 6 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Franguinho frito -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/06.jpg" alt="Franguinho frito">
+                    <div class="card-body">
+                      <h5 class="card-title">Franguinho frito</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 6 -->
+                <!-- col 7 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Moelinhas -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/07.jpg" alt="Moelinhas">
+                    <div class="card-body">
+                      <h5 class="card-title">Moelinhas</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 7 -->
+                <!-- col 8 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Carne de Porco frita -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/08.jpg" alt="Carne de Porco frita">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne de Porco frita</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 8 -->
+                <!-- col 9 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Rojõesinhos -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/09.jpg" alt="Rojõesinhos">
+                    <div class="card-body">
+                      <h5 class="card-title">Rojõesinhos</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 9 -->
+                <!-- col 10 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Pernil Fumado cozido -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/10.jpg" alt="Pernil Fumado cozido">
+                    <div class="card-body">
+                      <h5 class="card-title">Pernil Fumado cozido</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 10 -->
+                <!-- col 11 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Salada de Orelha -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/11.jpg" alt="Salada de Orelha">
+                    <div class="card-body">
+                      <h5 class="card-title">Salada de Orelha</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 11 -->
+                <!-- col 12 -->
+                <div class="ementa-item col-xs-12 col-sm-6 col-lg-3">
+                  <!-- Enroladinhos de Salsicha -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-pro/12.jpg" alt="Enroladinhos de Salsicha">
+                    <div class="card-body">
+                      <h5 class="card-title">Enroladinhos de Salsicha</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 12 -->
+              </div>
+            </div>
+            <!-- /tab 2 > content -->
+            <!-- tab 3 > content -->
+            <div class="tab-pane fade" id="nav-particulares-tab" role="tabpanel" aria-labelledby="nav-particulares">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3><i class="fas fa-shipping-fast"></i> Servi&ccedil;o para particulares</h3>
+                </div>
+                <div class="col-sm-12">
+                  <p>
+                    Poupe-se da cozinha durante o fim de semana e use o seu tempo naquilo que mais gosta.
+                  </p>
+                  <p>
+                    Com uma oferta variada, mediante o seu gosto pessoal, entregamos ou confeccionamos no seu domic&iacute;lio comida 100% caseira feita especialmente para si, mantendo todo o sabor de uma refei&ccedil;&atilde;o saud&aacute;vel e feita com <i>amor</i>.
+                  </p>
+                  <p>
+                    Para al&eacute;m da variada gama de petiscos dispon&iacute;vel para profissionais, poder&aacute; tamb&eacute;m aproveitar a nossa gama de refei&ccedil;&otilde;es quentes.
+                  </p>
+                  <p>
+                    A seguinte ementa, dever&aacute; servir apenas para apimentar a sua imagina&ccedil;&atilde;o. Se desejar algum artigo que n&atilde;o se encontra na lista n&atilde;o hesite em contactar-nos.
+                  </p>
+                </div>
+              </div>
+              <!-- EMENTA >> GRID 3 > GRID 1 -->
+              <div class="ementa row justify-content-center">
+                <!-- col 1 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/01.jpg" alt="Massada de marisco">
+                    <div class="card-body">
+                      <h5 class="card-title">Massada de marisco</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 1 -->
+                <!-- col 2 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/02.jpg" alt="Açorda de marisco">
+                    <div class="card-body">
+                      <h5 class="card-title">Açorda de marisco</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 2 -->
+                <!-- col 3 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- Salada de Bacalhau - Punheta de Bacalhau -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/03.jpg" alt="Migas com carne frita">
+                    <div class="card-body">
+                      <h5 class="card-title">Migas com carne frita</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 3 -->
+                <!-- col 4 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- Salada de grão com atum -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/04.jpg" alt="Batata doce gratinada com panadinhos">
+                    <div class="card-body">
+                      <h5 class="card-title">Batata doce gratinada com panadinhos</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 4 -->
+                <!-- col 5 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- Iscas de Fígado -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/05.jpg" alt="Bacalhau com molho Béchamel">
+                    <div class="card-body">
+                      <h5 class="card-title">Bacalhau com molho Béchamel</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 5 -->
+                <!-- col 6 -->
+                <div class="ementa-item col-xs-12 col-sm-4">
+                  <!-- Franguinho frito -->
+                  <!-- card -->
+                  <div class="card">
+                    <img class="card-img rounded-circle mx-auto" src="img/menu-particulares/06.jpg" alt="Pá de porco assada com canela,castanhas e vinho do Porto">
+                    <div class="card-body">
+                      <h5 class="card-title">Pá de porco assada com canela,castanhas e vinho do Porto</h5>
+                    </div>
+                  </div>
+                  <!-- /card -->
+                </div>
+                <!-- /col 6 -->
+              </div>
+            </div>
+            <!-- /tab 3 > content -->
+            <!-- tab 4 > content -->
+            <div class="tab-pane fade" id="nav-sobremesas-tab" role="tabpanel" aria-labelledby="nav-sobremesas-tab">
+              <p>
+                As sobremesas ponho amanha ou daqui a bocado... depois de ver tanta imagem boa fiquei cheio de fome.
+              </p>
+            </div>
+          </div>
+          <!-- /tab 4 > content -->
+          <!-- /tab > content -->
+        </div>
+      </div>
+      <!-- /wrapper -->
+      <!-- /tabs -->
+      <!-- local navigation -->
+        <nav class="smoothClass row d-none d-md-blockd-none d-md-block">
+          <a class="nav-link" href="#footer">
+            <section class="goDown">
+              <i class="fas fa-caret-down"></i>
+              <i class="fas fa-caret-down"></i>
+              <i class="fas fa-caret-down"></i>
+            </section>
+          </a>
+        </nav>
+      <!-- /local navigation -->
+    </section>
+    <!-- /body > services -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- footer -->
     <section id="footer" class="container-fluid">
       <div class="row justify-content-around">
